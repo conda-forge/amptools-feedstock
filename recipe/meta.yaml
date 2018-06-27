@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: amptools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/shakemap-amp-tools/archive/{{ version }}.tar.gz
-  sha256: 55ee5258cb583bccc932b39fd84b00a9767b43e6e16a0896977badefeda04503
+  sha256: 679e1f57094a17845e5d3dc0dc6fc50781437f1c1e0c04fbd243d5f4edaed49f
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - pandas
     - xlrd
     - xlwt
+    - pyyaml
     - xlsxwriter
 
 test:
