@@ -1,4 +1,4 @@
-{% set version = "1.1.3" %}
+{% set version = "1.1.4" %}
 
 package:
   name: amptools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/shakemap-amp-tools/archive/{{ version }}.tar.gz
-  sha256: f57d069a8fa48ce7fec7c05206a4cbacfee84a4556eff2ad1607d582860860a7
+  sha256: 9008ed8b812d8079430943d3450e49da4c0c414da2cd57613eaacb2831ac2f5a
 
 build:
   number: 0
