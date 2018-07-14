@@ -14,9 +14,7 @@ Summary: Fetch and process strong motion waveform/peak amplitude data.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/amptools-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/amptools-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/amptools-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/amptools-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/amptools-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/amptools-feedstock/branch/master)
+All platforms: ![noarch disabled](https://img.shields.io/badge/noarch-disabled-lightgrey.svg)
 
 Current release info
 ====================
