@@ -20,7 +20,7 @@ requirements:
   run:
     - python >=3
     - lxml
-    - numpy
+    - numpy >=1.14
     - obspy
     - openpyxl
     - pandas
