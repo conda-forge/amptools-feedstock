@@ -17,13 +17,14 @@ build:
 
 requirements:
   build:
-    - python >=3.6
     - pip
     - setuptools
     - {{ compiler('c') }}
     - cython
     - numpy
-    
+  host:
+    - python >=3.6
+
   run:
     - python >=3.6
     - lxml
