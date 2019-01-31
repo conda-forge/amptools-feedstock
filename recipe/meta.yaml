@@ -1,4 +1,4 @@
-{% set version = "1.1.7" %}
+{% set version = "1.1.8" %}
 
 package:
   name: amptools
@@ -6,19 +6,21 @@ package:
 
 source:
   url: https://github.com/usgs/shakemap-amp-tools/archive/{{ version }}.tar.gz
-  sha256: 76fce3ff70aa1fe6d9d6667ce289d147013d4f7deace88231f3be0b395c611e7
+  sha256: 6a691201b581a470244e39c6f213d6172a12b417923ea9d6816cae61d324fe2b
 
 build:
   number: 0
-  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
+  skip: true # [win]
 
 requirements:
   build:
-    - python >=3
+    - python >=3.6
     - pip
+    - setuptools
+    - {{ compiler('c') }}
   run:
-    - python >=3
+    - python >=3.6
     - lxml
     - numpy >=1.14
     - obspy
