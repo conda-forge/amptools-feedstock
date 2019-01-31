@@ -17,6 +17,7 @@ build:
 
 requirements:
   build:
+    - python >=3.6
     - pip
     - setuptools
     - {{ compiler('c') }}
