@@ -22,6 +22,8 @@ requirements:
     - setuptools
     - {{ compiler('c') }}
     - cython
+    - numpy
+    
   run:
     - python >=3.6
     - lxml
