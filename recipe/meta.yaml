@@ -12,6 +12,8 @@ build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
   skip: true  # [win]
+  skip: false  # [linux]
+  skip: false  # [osx]
 
 requirements:
   build:
@@ -19,9 +21,11 @@ requirements:
     - pip
     - setuptools
     - {{ compiler('c') }}
+    - cython
   run:
     - python >=3.6
     - lxml
+    - cython
     - numpy >=1.14
     - obspy
     - openpyxl
@@ -30,6 +34,7 @@ requirements:
     - xlrd
     - xlwt
     - xlsxwriter
+
 
 test:
 
