@@ -25,6 +25,8 @@ requirements:
     - numpy
   host:
     - python >=3.6
+    - numpy
+    - cython
 
   run:
     - python >=3.6
