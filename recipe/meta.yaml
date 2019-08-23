@@ -1,4 +1,4 @@
-{% set version = "1.1.7" %}
+{% set version = "1.1.9" %}
 
 package:
   name: amptools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/usgs/shakemap-amp-tools/archive/{{ version }}.tar.gz
-  sha256: 76fce3ff70aa1fe6d9d6667ce289d147013d4f7deace88231f3be0b395c611e7
+  sha256: 2ac9632e2bdb9a015b55f5f470e82ecaa654bdb66dbe79a65926f6e109420992
 
 build:
   number: 0
@@ -18,16 +18,10 @@ requirements:
     - python >=3
     - pip
   run:
-    - python >=3
-    - lxml
-    - numpy >=1.14
-    - obspy
-    - openpyxl
-    - pandas
-    - pyyaml
-    - xlrd
-    - xlwt
-    - xlsxwriter
+    - python=3.6
+    - h5py>=2.8.0
+    - gmprocess
+    - configobj
 
 test:
 
