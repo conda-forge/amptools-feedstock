@@ -9,7 +9,7 @@ source:
   sha256: f9e887821550db60db55fb879910ba09edadb45be4e73e84ba105af65e8b532a
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python=3.6
-    - h5py>=2.8.0
-    - gmprocess >=0.2.8
+    - h5py >2.7.1
+    - gmprocess >0.2.7
     - configobj
 
 test:
