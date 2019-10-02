@@ -18,7 +18,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python=3.6
+    - python =3.6
     - h5py >2.7.1
     - gmprocess >0.2.7
     - configobj
