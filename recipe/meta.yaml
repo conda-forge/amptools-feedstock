@@ -9,22 +9,24 @@ source:
   sha256: 48d7c178ca3567062d4ed15e766311b4c9fea05fae8aade745acbf30bf5fc525
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python =3.6
+    - python >={{ python_min }}
     - h5py >2.7.1
     - gmprocess >0.2.7
     - configobj
 
 test:
 
+  requires:
+    - python {{ python_min }}
   imports:
     - amptools
 
